@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сапфир — Чат менеджер</title>
+  <meta name="description" content="Сапфир — чат менеджер для Telegram. Управляйте сообществом, автоматизируйте задачи, получайте аналитику.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="nav" id="top">
+    <a href="index.html" class="logo" aria-label="Сапфир">
+      <img src="лого.png" alt="Сапфир" class="logo-img"/>
+      <span>Сапфир</span>
+    </a>
+    <nav class="menu" aria-label="Основная навигация">
+      <a href="index.html" class="menu-item active">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 10.5l9-7 9 7V20a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2v-9.5z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Главная</span>
+      </a>
+      <a href="features.html" class="menu-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Функционал</span>
+      </a>
+      <a href="news.html" class="menu-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h12a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2V5z" stroke="currentColor" stroke-width="1.6"/><path d="M18 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V7z" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Новости</span>
+      </a>
+      <a href="offer.html" class="menu-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/><path d="M15 4v3h3" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span>Оферта</span>
+      </a>
+    </nav>
+    <button class="menu-toggle" aria-label="Меню">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Главная -->
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <h1 class="title"><span class="brand">Сапфир</span><span class="sub">Чат-менеджер</span></h1>
+        <p class="subtitle">
+          Telegram-бот, который помогает модерировать чат, запускать авто-ответы,
+          управлять ролями и получать аналитику в один клик.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://t.me/saphirecm_bot" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a5 5 0 0 1 5 5v1h1a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-7a3 3 0 0 1 3-3h1V8a5 5 0 0 1 5-5z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Добавить в чат</span>
+          </a>
+          <a class="btn btn-outline" href="features.html">
+            <span>Посмотреть команды</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="картинка.jpg" alt="Sapphire" class="hero-image"/>
+      </div>
+    </section>
+    
+    <!-- Возможности бота -->
+    <section class="section">
+      <h2 class="section-title center">Возможности бота</h2>
+      <p class="section-subtitle">Сапфир предоставляет полный набор инструментов для эффективного управления Telegram чатами</p>
+      <div class="features-grid">
+        <div class="feature-card card reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M6 10h12v8l-4-2-4 2-4-2-4 2V10h4z" stroke="#9bd5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Управление чатами</h3>
+          <p>Эффективное управление чатами в Telegram с продвинутыми функциями модерации</p>
+        </div>
+        <div class="feature-card card reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z" stroke="#9bd5ff" stroke-width="1.7"/></svg>
+          </div>
+          <h3>Защита сообщества</h3>
+          <p>Автоматическая защита от спама, флуды и нежелательного контента</p>
+        </div>
+        <div class="feature-card card reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z" stroke="#9bd5ff" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Быстрая настройка</h3>
+          <p>Простая настройка и интуитивно понятный интерфейс для администраторов</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Готовы начать? -->
+    <section class="section">
+      <div class="ready card">
+        <div class="ready-inner">
+          <h3>Готовы начать?</h3>
+          <p>Изучите все команды и возможности бота, чтобы максимально эффективно использовать его в своём чате</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="features.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a7 7 0 0 1 7 7v2h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-16a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1V9a7 7 0 0 1 7-7zm-3 9a3 3 0 1 0 6 0" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span>Список команд</span>
+            </a>
+            <a class="btn btn-outline" href="news.html">
+              
+              <span>Новости разработки</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- Mobile bottom tabbar -->
+  <nav class="tabbar" aria-label="Быстрая навигация">
+    <a href="index.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5l9-7 9 7V20a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2v-9.5z" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Главная</span>
+    </a>
+    <a href="features.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>Функционал</span>
+    </a>
+    <a href="news.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h12a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2V5z" stroke="currentColor" stroke-width="1.8"/><path d="M18 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V7z" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Новости</span>
+    </a>
+    <a href="offer.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8"/><path d="M15 4v3h3" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Оферта</span>
+    </a>
+  </nav>
+  <footer class="footer">
+    <p>© <span id="year"></span> Сапфир. Не является продуктом Telegram.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

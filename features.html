@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сапфир — Функционал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo" aria-label="Сапфир — к началу">
+        <img src="лого.png" alt="Сапфир" class="logo-img"/>
+      <span>Сапфир</span>
+    </a>
+    <nav class="menu">
+      <a href="index.html" class="menu-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 10.5l9-7 9 7V20a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2v-9.5z" stroke="currentColor" stroke-width="1.6"/></svg><span>Главная</span></a>
+      <a href="features.html" class="menu-item active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Функционал</span></a>
+      <a href="news.html" class="menu-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h12a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2V5z" stroke="currentColor" stroke-width="1.6"/><path d="M18 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V7z" stroke="currentColor" stroke-width="1.6"/></svg><span>Новости</span></a>
+      <a href="offer.html" class="menu-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/><path d="M15 4v3h3" stroke="currentColor" stroke-width="1.6"/></svg><span>Оферта</span></a>
+    </nav>
+    <button class="menu-toggle" aria-label="Меню"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">Команды бота</h1>
+      <p class="section-subtitle">Список команд и их описание для эффективного управления чатом</p>
+      <div class="chips" aria-label="Фильтры по категориям">
+        <span class="chip">12 команд</span>
+        <span class="chip">Модерация</span>
+        <span class="chip">Управление</span>
+      </div>
+      <div class="features-panels card">
+        <div class="panels">
+          <div class="panel active">
+            <div class="category">
+              <div class="category-head">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l3 5 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1 3-5z" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <div>
+                  <h3 class="category-title">Базовые команды</h3>
+                  <p class="category-sub">Немножко команд</p>
+                </div>
+                <div class="chip" style="margin-left:auto">6 команд</div>
+              </div>
+              <div class="columns-rect">
+                <div class="rect card">
+                  <div class="cmd-grid">
+                    <div class="cmd-card">
+                      <h4>/ban</h4>
+                      <p>Заблокировать пользователя</p>
+                      <p class="cmd-usage">Использование: /ban @username [причина]</p>
+                    </div>
+                    <div class="cmd-card">
+                      <h4>/unban</h4>
+                      <p>Разблокировать пользователя</p>
+                      <p class="cmd-usage">Использование: /unban @username</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="rect card">
+                  <div class="cmd-grid">
+                    <div class="cmd-card">
+                      <h4>/kick</h4>
+                      <p>Исключить пользователя</p>
+                      <p class="cmd-usage">Использование: /kick @username [причина]</p>
+                    </div>
+                    <div class="cmd-card">
+                      <h4>/mute</h4>
+                      <p>Заглушить пользователя</p>
+                      <p class="cmd-usage">Использование: /mute @username [время]</p>
+                    </div>
+                    <div class="cmd-card">
+                      <h4>/unmute</h4>
+                      <p>Снять заглушение</p>
+                      <p class="cmd-usage">Использование: /unmute @username</p>
+                    </div>
+                    <div class="cmd-card">
+                        <h4>/help</h4>
+                        <p>Посмотреть список команд</p>
+                        <p class="cmd-usage">Использование: /help</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="category">
+              <div class="category-head">
+                <div class="category-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <h3 class="category-title">Базовые команды</h3>
+                  <p class="category-sub">Немножко команд</p>
+                </div>
+                <div class="chip" style="margin-left:auto">6 команд</div>
+              </div>
+              <div class="columns-rect">
+                <div class="rect card">
+                  <div class="cmd-grid">
+                    <div class="cmd-card">
+                      <h4>/warn</h4>
+                      <p>Выдать предупреждение</p>
+                      <p class="cmd-usage">Использование: /warn @username [причина]</p>
+                    </div>
+                    <div class="cmd-card">
+                      <h4>/unwarn</h4>
+                      <p>Снять предупреждение</p>
+                      <p class="cmd-usage">Использование: /unwarn @username</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="rect card">
+                  <div class="cmd-grid">
+                    <div class="cmd-card">
+                      <h4>/stats</h4>
+                      <p>Посмотреть профиль пользователя</p>
+                      <p class="cmd-usage">Использование: /stats @username</p>
+                    </div>
+                    <div class="cmd-card">
+                      <h4>/pin</h4>
+                      <p>Закрепить сообщение</p>
+                      <p class="cmd-usage">Использование: /pin</p>
+                    </div>
+                    <div class="cmd-card">
+                        <h4>/unpin</h4>
+                        <p>Открепить сообщение</p>
+                        <p class="cmd-usage">Использование: /unpin</p>
+                      </div>
+                      <div class="cmd-card">
+                        <h4>/zov</h4>
+                        <p>Вызвать всех участников чата</p>
+                        <p class="cmd-usage">Использование: /zov [сообщение]</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-nav">
+          <button class="arrow features-left" aria-label="Предыдущие">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dots" role="tablist" aria-label="Переключение групп команд">
+            <button class="dot active" aria-label="Группа 1" aria-selected="true"></button>
+            <button class="dot" aria-label="Группа 2" aria-selected="false"></button>
+          </div>
+          <button class="arrow features-right" aria-label="Следующие">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Быстрая навигация">
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5l9-7 9 7V20a2 2 0 0 1-2 2h-4v-7H9v7H5a2 2 0 0 1-2-2v-9.5z" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Главная</span>
+    </a>
+    <a href="features.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>Функционал</span>
+    </a>
+    <a href="news.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h12a2 2 0 0 1 2 2v12H6a2 2 0 0 1-2-2V5z" stroke="currentColor" stroke-width="1.8"/><path d="M18 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V7z" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Новости</span>
+    </a>
+    <a href="offer.html">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h9l3 3v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8"/><path d="M15 4v3h3" stroke="currentColor" stroke-width="1.8"/></svg>
+      <span>Оферта</span>
+    </a>
+  </nav>
+
+  <footer class="footer"><p>© <span id="year"></span> Сапфир</p></footer>
+  <script src="script.js"></script>
+  <script>
+    // Smooth slider: slide+fade with animated height (panels wrapper)
+    (function(){
+      const panels = Array.from(document.querySelectorAll('.features-panels .panel'));
+      const dots = Array.from(document.querySelectorAll('.features-panels .dot'));
+      const leftButtons = Array.from(document.querySelectorAll('.features-left, .features-left-m'));
+      const rightButtons = Array.from(document.querySelectorAll('.features-right, .features-right-m'));
+      const wrapper = document.querySelector('.features-panels .panels');
+      let index = panels.findIndex(p => p.classList.contains('active'));
+      if(index < 0) index = 0;
+
+      function setWrapperHeight(target){
+        if(!wrapper || !target) return;
+        // temporarily mark target active to measure full height
+        const wasActive = target.classList.contains('active');
+        target.classList.add('active');
+        const nextHeight = target.scrollHeight;
+        if(!wasActive) target.classList.remove('active');
+        wrapper.style.height = nextHeight + 'px';
+      }
+
+      function activate(i, direction = 1){
+        const next = panels[i];
+        const current = panels[index];
+        if(!next || next === current) return;
+        // prepare slide direction
+        next.style.transform = `translateX(${24 * direction}px)`;
+        next.classList.add('active');
+        // animate wrapper height
+        setWrapperHeight(next);
+        // after a frame, let CSS transition run
+        requestAnimationFrame(()=>{
+          next.style.transform = '';
+          current?.classList.remove('active');
+        });
+        index = i;
+        dots.forEach((d,idx)=>{
+          d.classList.toggle('active', idx===index);
+          d.setAttribute('aria-selected', String(idx===index));
+        });
+        // sync mobile pager dots if present
+        const mpDots = document.querySelectorAll('.mobile-pager .dot');
+        mpDots.forEach((d,idx)=>d.classList.toggle('active', idx===index));
+      }
+
+      function show(i){
+        const newIndex = (i + panels.length) % panels.length;
+        const direction = newIndex > index ? 1 : -1;
+        activate(newIndex, direction);
+      }
+
+      dots.forEach((d,idx)=>d.addEventListener('click', ()=>show(idx)));
+      leftButtons.forEach(btn=>btn.addEventListener('click', ()=> show(index-1)));
+      rightButtons.forEach(btn=>btn.addEventListener('click', ()=> show(index+1)));
+      // initialize explicit height and keep responsive
+      setWrapperHeight(panels[index]);
+      window.addEventListener('resize', ()=> setWrapperHeight(panels[index]));
+    })();
+  </script>
+</body>
+</html>
+
+
